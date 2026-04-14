@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box;}
+
+/* FUNDO CINEMATOGRÁFICO */
+body{
+  font-family:'Cinzel',serif;
+  color:white;
+   /* Cria um fundo com degradê escuro estilo mágico */
+  background:linear-gradient(-45deg,#0d0d0d,#1a0033,#000,#330000);
+  /* Aumenta o tamanho do fundo para permitir animação suave */
+  background-size:400% 400%;
+  /* Aplica animação contínua no fundo */
+  animation:bg 12s infinite;
+}
+/* Anima o fundo fazendo o degradê se mover (efeito “mágico”) */
+@keyframes bg{
+  0%{background-position:0%}
+  50%{background-position:100%}
+  100%{background-position:0%}
+}
+
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  padding:20px;
+  background:rgba(0,0,0,0.7);
+  backdrop-filter:blur(10px);
+}
+
+nav a{
+  color:gold;
+  margin:10px;
+  text-decoration:none;
+}
+
+nav a:hover{
+  text-shadow:0 0 10px gold;
+}
+
+/* CONTAINER */
+.container{
+  text-align:center;
+  padding:30px;
+}
+
+/* INPUT */
+input{
+  padding:12px;
+  border-radius:25px;
+  border:none;
+  width:250px;
+  margin:10px;
+  text-align:center;
+}
+
+/* BOTÕES */
+button{
+  padding:12px 20px;
+  border:none;
+  border-radius:25px;
+  background:linear-gradient(45deg,gold,orange);
+  cursor:pointer;
+  margin:10px;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 20px gold;
+}
+
+/* QUIZ */
+#question{
+  font-size:22px;
+  margin:20px;
+}
+
+#answers button{
+  display:block;  /* Cada botão fica em linha separada */
+  margin:10px auto; /* Centraliza */
+  width:250px;
+}
+
+/* RESULTADO */
+#result{
+  margin-top:20px;
+  font-size:24px;
+  color:gold;
+/* Destaque dourado para o resultado */
+}
+
+/* PERFIL */
+#perfil{
+  margin-top:20px;
+  background:rgba(255,255,255,0.1);
+  padding:20px;
+  border-radius:15px;
+  backdrop-filter:blur(10px); /* Efeito vidro mágico */
+}
+
+/* BUSCA */
+#search{
+  width:60%;
+  padding:12px;
+  border-radius:30px;
+  border:none;
+  margin:20px auto;
+  display:block;  /* Centraliza o input */
+  background:rgba(255,255,255,0.1);
+  color:white;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:25px;
+  padding:30px;
+}
+
+/* CARD */
+.card{
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(10px);
+  border-radius:20px;
+  overflow:hidden;
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 25px gold;
+}
+
+.card img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+}
+
+/* VARINHA */
+#wand{
+  position:fixed;
+  width:70px;
+  height:70px;
+  background:url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Magic_wand.svg/512px-Magic_wand.svg.png") no-repeat center;
+  background-size:contain;
+  pointer-events:none;
+}
+
+/* MAGIA */
+.magic{
+  position:fixed;
+  width:10px;
+  height:10px;
+  background:gold;
+  border-radius:50%;
+  animation:magic 1s forwards;
+}
+
+@keyframes magic{
+  to{
+    transform:translate(var(--x),var(--y));
+    opacity:0;
+  }
+}
+/* Faz as partículas explodirem e sumirem */
+
+/* PERFIL BRUXO */
+.perfil-card {
+  margin-top:20px;
+  padding:20px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+  box-shadow:0 0 20px rgba(255,215,0,0.4);
+  transition:0.3s;
+}
+
+.perfil-card:hover {
+  transform:scale(1.03);
+   /* Aumenta levemente ao passar o mouse */
+}

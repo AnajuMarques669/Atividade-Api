@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head><!-- Cabeçalho da página (configurações que não aparecem diretamente na tela) -->
+<meta charset="UTF-8"><!-- Permite acentuação e caracteres especiais (ç, á, ã etc.) -->
+
+
+ <title>Wizard World</title>
+
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header> <!-- Cabeçalho principal do site -->
+
+    <h1>🪄 Wizard World</h1>
+  <!-- Título principal exibido na tela -->
+
+  <nav>
+  <!-- Menu de navegação -->
+
+    <a href="index.html">Home</a>
+    <a href="personagens.html">Personagens</a>
+    <a href="feiticos.html">Feitiços</a>
+    
+</nav>
+</header>
+
+<div class="container"> <!-- Caixa principal que organiza o conteúdo da página -->
+
+    <h2> Descubra sua casa</h2>
+  
+    <input id="nome" placeholder="Seu nome"> <!-- Campo de texto onde o usuário digita o nome -->
+  
+     <!-- Área do quiz -->
+     <div id="quiz">
+ 
+
+    <h3 id="question"></h3>    <!-- Aqui aparece a pergunta do quiz (via JavaScript) -->
+     <div id="answers"></div>     <!-- Aqui aparece a pergunta do quiz (via JavaScript) -->
+    
+ </div>
+
+  <h2 id="result"></h2> <!-- Aqui será mostrado o resultado final (ex: casa do usuário) -->
+  
+
+  <hr>
+  <!-- Linha horizontal separando as seções -->
+
+  <h2>🧙‍♂️ Área do Bruxo</h2>
+  <!-- Título da área extra -->
+
+  <div id="perfil"></div>
+  <!-- Espaço onde o JavaScript pode mostrar informações do usuário -->
+
+</div>
+
+<div id="wand"></div> <!-- Elemento que é usado para efeito visual (mouse mágico) -->
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
